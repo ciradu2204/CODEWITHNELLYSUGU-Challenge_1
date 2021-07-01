@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,200&display=swap');
+
+html, body{
+    margin: 0;
+    padding: 0; 
+    font-family: 'Poppins', sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.header{
+    height: 150px;
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+/** HEADER CSS **/
+.header h1{
+    color:#999966;
+
+}
+
+.header p{
+    width: 920px;
+    text-align: center;
+}
+
+/** NAME/EMAIL CSS **/
+#App{
+    display: grid; 
+    grid-template-columns: auto;
+    row-gap: 2rem;
+   
+}
+
+.user div{
+ display: grid;
+ grid-template-columns: 50em 50em 10em 10em;
+ background-color: #999966;
+ padding: 5em  2em ;
+ border-right: 5em;
+ font-size: 10px;
+ color:white;
+}
+
+/** POSTS CSS **/
+.user ul{ 
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 20px;
+    grid-column-gap: 18px;
+    grid-row-gap:18px;
+}
+
+.user ul li{
+    list-style: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+}
+
+.user ul li h3{
+    font-weight: bolder;
+    font-size: 15px;
+}
+
+.user ul li h4{
+    
+    font-size: 13px;
+}
+
+/** RESPONSIVITY **/
+@media only screen and (max-width: 1200px){
+
+    .header p{
+        width: unset;
+    }
+    .user div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        line-height: 40px;
+        font-size: 9px;
+    }
+
+    .user button{
+        padding: 20px;
+    }
+
+       .user ul{ 
+        grid-template-columns: auto;
+        
+    }
+}
